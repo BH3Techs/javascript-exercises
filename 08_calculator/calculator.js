@@ -7,7 +7,15 @@ const subtract = function(num1, num2) {
 };
 
 const sum = function(... nums) {
-	
+  console.log("Hona  Kekutanga",nums);
+  let sum =0;
+  let array = nums[0];
+  
+	array.forEach(element => {
+    sum+=element;
+  });
+  console.log('Hona', sum)
+  return sum;
 };
 
 const multiply = function() {
