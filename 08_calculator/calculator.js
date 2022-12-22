@@ -32,11 +32,16 @@ const power = function(num1, num2) {
 };
 
 const factorial = function(num) {
-  ans =0;
-  for(i =0; i<=num; i++)
-    ans+=i;
-  
+  ans =1;
+
+  if(num>1){
+    for(let i =1; i<=num; i++){
+      console.log("Hona",i);
+      ans*=i;
+    }  
     return ans;
+  }
+    return 1;
 };
 
 // Do not edit below this line
